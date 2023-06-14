@@ -3,6 +3,7 @@ import { useEffect, useState, useRef } from "react";
 type TimerArgs = {
   milisegundos: number;
 };
+
 export const Timer = ({ milisegundos }: TimerArgs) => {
   const [segundos, setSegundos] = useState(0);
   const ref = useRef<NodeJS.Timeout>();
